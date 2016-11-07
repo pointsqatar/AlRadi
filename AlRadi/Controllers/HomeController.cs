@@ -26,7 +26,7 @@ namespace AlRadi.Controllers
                 message.Body = mail.Message;
                 message.Subject = mail.Subject;
                 SmtpClient client = new SmtpClient();
-                client.Host = "smtpout.europe.secureserver.net ";
+                client.Host = "smtpout.europe.secureserver.net";
                 client.Port = 465;
                 client.Credentials = new NetworkCredential("info@alradi-contracting.com", "Admin@2016");
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
