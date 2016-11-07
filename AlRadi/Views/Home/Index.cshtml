@@ -295,7 +295,7 @@
                             <div class="col-md-12">
                                 <div class="contact-form">
                                     <div class="row">
-                                        <form action="#" method="post">
+                                        <form>
                                             <fieldset class="col-md-4">
                                                 <input id="name" type="text" name="name" placeholder="Name">
                                             </fieldset>
@@ -309,7 +309,7 @@
                                                 <textarea name="message" id="message" placeholder="Message"></textarea>
                                             </fieldset>
                                             <fieldset class="col-md-12">
-                                                <input type="submit" name="send" value="Send Message" id="submit" class="button">
+                                                <input type="button" name="send" value="Send Message" id="submit" class="button">
                                             </fieldset>
                                         </form>
                                     </div> <!-- /.row -->
@@ -370,7 +370,41 @@
 
             });
         });
+        $(document).ready(function() {
+            $("#submit").click(function() {
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var subject = $("#subject").val();
+                var message = $("#message").val();
 
+                var mail =
+                {
+                    Name: name,
+                    Email : email,
+                    Subject: subject,
+                    Message : message
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: 'SendMail',
+                    data: mail,
+                    success: function (data) {
+                        alert("Mail sent!!!");
+                        $("#name").val("");
+                        $("#email").val("");
+                        $("#subject").val("");
+                        $("#message").val("");
+                        console.log(data);
+                    },
+                    error: function(data) {
+                        console.log(data);
+                    }
+
+                });
+
+            });
+
+        });
     </script>
 
     <!-- Google Map -->
