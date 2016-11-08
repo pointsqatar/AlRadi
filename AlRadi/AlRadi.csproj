@@ -100,9 +100,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\animate.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\normalize.min.css" />
     <Content Include="css\templatemo_misc.css" />
@@ -138,10 +141,6 @@
     <Content Include="images\templatemo-slide-2.jpg" />
     <Content Include="images\templatemo-slide-3.jpg" />
     <Content Include="images\templatemo-slide-4.jpg" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\linecons.eot" />
     <Content Include="fonts\linecons.ttf" />
     <Content Include="fonts\linecons.woff" />
@@ -154,6 +153,11 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="js\.DS_Store" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\alradi-contracting.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\AlRadi.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />

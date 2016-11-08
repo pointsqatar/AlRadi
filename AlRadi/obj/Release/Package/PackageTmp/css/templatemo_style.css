@@ -576,10 +576,10 @@ form input, form textarea {
 
 .footer {
     overflow: hidden;
-    position: fixed;
-    bottom: 10px;
+    /*position: fixed;*/
+    /*bottom: 10px;*/
     color: white;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .footer a {

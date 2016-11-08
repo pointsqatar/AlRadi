@@ -29,6 +29,7 @@ D:\Projects\AlRadi\AlRadi\bin\AlRadi.dll
 D:\Projects\AlRadi\AlRadi\bin\AlRadi.pdb
 D:\Projects\AlRadi\AlRadi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Projects\AlRadi\AlRadi\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\AlRadi\AlRadi\bin\System.Net.dll
 D:\Projects\AlRadi\AlRadi\bin\System.Web.Helpers.dll
 D:\Projects\AlRadi\AlRadi\bin\System.Web.Mvc.dll
 D:\Projects\AlRadi\AlRadi\bin\System.Web.Razor.dll
@@ -42,7 +43,6 @@ D:\Projects\AlRadi\AlRadi\bin\System.Web.Webpages.Deployment.xml
 D:\Projects\AlRadi\AlRadi\bin\System.Web.Webpages.Razor.xml
 D:\Projects\AlRadi\AlRadi\bin\System.Web.Helpers.xml
 D:\Projects\AlRadi\AlRadi\bin\System.Web.Mvc.xml
-D:\Projects\AlRadi\AlRadi\obj\Debug\AlRadi.csprojResolveAssemblyReference.cache
 D:\Projects\AlRadi\AlRadi\obj\Debug\AlRadi.dll
 D:\Projects\AlRadi\AlRadi\obj\Debug\AlRadi.pdb
-D:\Projects\AlRadi\AlRadi\bin\System.Net.dll
+D:\Projects\AlRadi\AlRadi\obj\Debug\AlRadi.csprojResolveAssemblyReference.cache
