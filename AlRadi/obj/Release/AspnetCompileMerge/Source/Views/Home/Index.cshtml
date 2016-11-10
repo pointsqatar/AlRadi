@@ -26,7 +26,9 @@
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <!-- templatemo 410 circle -->
+
 </head>
+
 <body>
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -53,7 +55,7 @@
                             <li><a class="homebutton" href="#">Home</a></li>
                             <li><a class="show-1" href="#">About</a></li>
                             <li><a class="show-2" href="#">Services</a></li>
-                            <li><a class="show-3" href="#">Gallery</a></li>
+                            <li><a class="show-3" href="#">Projects</a></li>
                             <li><a class="show-4" href="#" onclick="templatemo_map();">Contact</a></li>
                         </ul> <!-- /.menu -->
                         <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
@@ -73,17 +75,17 @@
                         <div class="row">
                             <ul class="tabs">
                                 <li class="col-md-4 col-sm-4">
-                                    <a href="#tab1" class="icon-item">
+                                    <a href="#tab1" class="icon-item" id="teamImg1" data-value="1">
                                         <i class="fa fa-history"></i>
                                     </a> <!-- /.icon-item -->
                                 </li>
                                 <li class="col-md-4 col-sm-4">
-                                    <a href="#tab2" class="icon-item">
+                                    <a href="#tab2" class="icon-item" id="teamImg2" data-value="2">
                                         <i class="fa fa-question-circle-o"></i>
                                     </a> <!-- /.icon-item -->
                                 </li>
                                 <li class="col-md-4 col-sm-4">
-                                    <a href="#tab3" class="icon-item">
+                                    <a href="#tab3" class="icon-item" id="teamImg3" data-value="3">
                                         <i class="fa fa-users"></i>
                                     </a> <!-- /.icon-item -->
                                 </li>
@@ -133,31 +135,13 @@
                         </div> <!-- /.row -->
 
                         <div class="row">
-                            <div class="col-md-4 col-sm-4">
+                            <div class="col-md-12 col-sm-12">
                                 <div class="member-item">
                                     <div class="thumb">
-                                        <img src="~/images/team/member-1.jpg" alt="Tanya - Web Designer">
+                                        <img id="teamImage" src="~/images/team/member-1.jpg" alt="Tanya - Web Designer">
                                     </div>
-                                    <h4>Tanya</h4>
-                                    <span>Web Designer</span>
-                                </div> <!-- /.member-item -->
-                            </div> <!-- /.col-md-4 -->
-                            <div class="col-md-4 col-sm-4">
-                                <div class="member-item">
-                                    <div class="thumb">
-                                        <img src="~/images/team/member-2.jpg" alt="Candy - Web Developer">
-                                    </div>
-                                    <h4>Candy</h4>
-                                    <span>Web Developer</span>
-                                </div> <!-- /.member-item -->
-                            </div> <!-- /.col-md-4 -->
-                            <div class="col-md-4 col-sm-4">
-                                <div class="member-item">
-                                    <div class="thumb">
-                                        <img src="~/images/team/member-3.jpg" alt="Julia - Creative Director">
-                                    </div>
-                                    <h4>Julia</h4>
-                                    <span>Creative Director</span>
+                                    <h4>Our Team</h4>
+                                    @*<span>Web Designer</span>*@
                                 </div> <!-- /.member-item -->
                             </div> <!-- /.col-md-4 -->
                         </div> <!-- /.row -->
@@ -168,42 +152,39 @@
                             <ul class="tabs">
                                 <li class="col-md-4 col-sm-4">
                                     <a href="#tab4" class="icon-item">
-                                        <i class="fa fa-cogs"></i>
+                                        <i class="fa fa-industry"></i>
                                     </a> <!-- /.icon-item -->
                                 </li>
                                 <li class="col-md-4 col-sm-4">
                                     <a href="#tab5" class="icon-item">
-                                        <i class="fa fa-leaf"></i>
+                                        <i class="fa fa-home"></i>
                                     </a> <!-- /.icon-item -->
                                 </li>
                                 <li class="col-md-4 col-sm-4">
                                     <a href="#tab6" class="icon-item">
-                                        <i class="fa fa-users"></i>
+                                        <i class="fa fa-building"></i>
                                     </a> <!-- /.icon-item -->
                                 </li>
                             </ul> <!-- /.tabs -->
                             <div class="col-md-12 col-sm-12">
-                                <div class="toggle-content text-center" id="tab4">
-                                    <h3>Our Services</h3>
-                                    <p>
-                                        You can easily change icons by <a rel="nofollow" href="http://fontawesome.info/font-awesome-icon-world-map/">Font Awesome</a>. Example: <strong>&lt;i class=&quot;fa fa-users&quot;&gt;&lt;/i&gt;</strong> In varius eros ac est interdum, quis scelerisque elit semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                        <br><br>Donec mattis enim sit amet nisl faucibus, eu pulvinar nibh facilisis. Aliquam erat volutpat. Vivamus tempus, nisi varius imperdiet molestie, velit mi feugiat felis, sit amet fringilla mi massa sit amet arcu. Mauris dictum nisl id felis lacinia congue. Aliquam lectus nisi, sodales in lacinia quis, lobortis vel sem. Vestibulum elit nisi, placerat eget auctor ut, dictum at libero.
+                                <div class="toggle-content" id="tab4">
+                                    <h3>Industrial Construciton</h3>
+                                    <p style="font-size: 18px; line-height: 30px; font-family: sans-serif">
+                                        Under Industrial construction Al Radi is responsible to manage design, installation, and maintenance of all of the structural and mechanical components in power plants, factories, etc.
                                     </p>
                                 </div>
 
-                                <div class="toggle-content text-center" id="tab5">
-                                    <h3>Our Support</h3>
-                                    <p>
-                                        Nulla consequat nibh mattis metus sodales, at eleifend tortor tempor. Sed auctor lacus felis. Maecenas auctor enim libero, vel viverra nulla fringilla quis. Sed eget aliquet arcu. Suspendisse ac dignissim nunc, id pretium elit. Nunc id neque vel leo semper gravida non ut enim. Cras sed posuere magna.
-                                        <br><br>Morbi eget ante sed felis tristique interdum. In varius eros ac est interdum, quis scelerisque elit semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                <div class="toggle-content" id="tab5">
+                                    <h3>Residential and Commercial building</h3>
+                                    <p style="font-size: 18px; line-height: 30px; font-family: sans-serif">
+                                        Al Radi’s working strategy can be attributed to its experienced staff and over 10 years of experience for its construction services into residential and commercial buildings. Al Radi offers services starting with the original conception and design through implementation, to start-up, permitting, and turn-key operations.Al Radi has a long list of successfully completed projects of villas.
                                     </p>
                                 </div>
 
-                                <div class="toggle-content text-center" id="tab6">
-                                    <h3>Testimonials</h3>
-                                    <p>
-                                        Etiam dictum, quam quis pharetra tincidunt, enim nunc faucibus ipsum, vitae condimentum ligula est eu dui. Sed tincidunt tincidunt sapien non feugiat. Aenean lacinia tempor leo, et euismod ligula porta non. Quisque lectus ante, rutrum eu neque volutpat, euismod lobortis velit. Suspendisse felis risus, tempor ac vehicula eu, volutpat volutpat sem. Donec quis orci nisl. Integer euismod lacus nec risus sollicitudin molestie vel semper turpis.
-                                        <br><br>In varius imperdiet enim quis iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ac mauris aliquam magna molestie posuere in id elit. Integer semper metus felis, fringilla congue elit commodo a. Donec eget rutrum libero.
+                                <div class="toggle-content" id="tab6">
+                                    <h3>Civil Maintenance & Renovation Works</h3>
+                                    <p style="font-size: 18px; line-height: 30px; font-family: sans-serif">
+                                        Under Maintenance and renovation work Al Radi is responsible to identify and carry out necessary maintenance and repair. Our skilled facilities inspectors conduct periodic, detailed inspections to evaluate the maintenance condition of buildings and facilities and to identify any necessary corrective work that is carried out under the guidance of our experienced engineers.
                                     </p>
                                 </div>
                             </div> <!-- /.col-md-12 -->
@@ -346,14 +327,14 @@
                 <p id="footer-text">
                     Copyright &copy; 2016 <a href="#">Al Radi Contracting </a>
                 </p>
-                
+
             </div><!-- /.footer -->
             <div class="col-md-6 footer">
                 <p style="text-align:center">
                     Developed and maintained by <b><a href="http://www.pointsqatar.com" target="_blank">Points</a></b>
                 </p>
             </div>
-            </div>
+        </div>
     </div> <!-- /.container-fluid -->
 
     <script src="~/js/vendor/jquery-1.10.1.min.js"></script>

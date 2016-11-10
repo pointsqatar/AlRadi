@@ -159,7 +159,6 @@
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\alradi-contracting.com - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\AlRadi.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="images\Img_4.jpg" />
     <Content Include="js\bootstrap.js" />

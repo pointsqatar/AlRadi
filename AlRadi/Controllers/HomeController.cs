@@ -15,13 +15,12 @@ namespace AlRadi.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult SendMail(FromMail mail)
         {
             try
             {
-                //MailAddress mailFrom = new MailAddress("admin@alradi-contracting.com", mail.Name);
-                //MailAddress mailTo = new MailAddress("info@pointsqatar.com", "Alradi");
                 System.Web.Mail.MailMessage message = new System.Web.Mail.MailMessage();
                 message.From = "admin@alradi-contracting.com";
                 message.To = "info@pointsqatar.com";
@@ -29,10 +28,6 @@ namespace AlRadi.Controllers
                 message.Subject = mail.Subject;
                 SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
                 SmtpMail.Send(message);
-
-
-                //client.Host = "smtpout.secureserver.net";
-                //client.Send(message);
                 return Content("Success");
             }
             catch (Exception ex)
