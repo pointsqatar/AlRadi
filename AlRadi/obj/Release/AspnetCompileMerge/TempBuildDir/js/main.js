@@ -14,16 +14,34 @@
     $('#teamImg1,#teamImg2,#teamImg3').click(function () {
         var imagevalue = $(this).attr('data-value');
         if (imagevalue == "1") {
-            $('#teamImage').attr('src', 'images/team/member-1.jpg');
+            $('#teamImage1').attr('src', 'images/team/member-1.jpg');
+            $('#teamImage2').attr('src', 'images/team/member-2.jpg');
         }
         if (imagevalue == "2") {
-            $('#teamImage').attr('src', 'images/team/member-2.jpg');
+            $('#teamImage1').attr('src', 'images/team/member-3.jpg');
+            $('#teamImage2').attr('src', 'images/team/member-4.jpg');
         }
         if (imagevalue == "3") {
-            $('#teamImage').attr('src', 'images/team/member-3.jpg');
+            $('#teamImage1').attr('src', 'images/team/member-5.jpg');
+            $('#teamImage2').attr('src', 'images/team/member-6.jpg');
         }
     });
 
+    $('#serviceTab1,#serviceTab2,#serviceTab3').click(function () {
+        var tabvalue = $(this).attr('data-value');
+        if (tabvalue == "1") {
+            $('#servicesImage1').attr('src', 'images/services/industrial-1.jpg');
+            $('#servicesImage2').attr('src', 'images/services/industrial-2.jpg');
+        }
+        if (tabvalue == "2") {
+            $('#servicesImage1').attr('src', 'images/services/building-1.jpg');
+            $('#servicesImage2').attr('src', 'images/services/building-2.jpg');
+        }
+        if (tabvalue == "3") {
+            $('#servicesImage1').attr('src', 'images/services/renovation-1.jpg');
+            $('#servicesImage2').attr('src', 'images/services/renovation-2.jpg');
+        }
+    });
 
     /************** Open Different Pages *********************/
     $(".menu a").click(function () {

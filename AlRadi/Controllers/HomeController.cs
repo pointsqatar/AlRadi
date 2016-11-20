@@ -22,18 +22,26 @@ namespace AlRadi.Controllers
             try
             {
                 System.Web.Mail.MailMessage message = new System.Web.Mail.MailMessage();
-                message.From = "admin@alradi-contracting.com";
-                message.To = "info@pointsqatar.com";
-                message.Body = mail.Message;
+                message.From = System.Configuration.ConfigurationManager.AppSettings["FromAddress"];
+                message.To = System.Configuration.ConfigurationManager.AppSettings["ToAddress"];
+                message.Body = string.Format(GetMailTemplate(), mail.Name, mail.Email, mail.Subject, mail.Message);
                 message.Subject = mail.Subject;
+                message.BodyFormat = MailFormat.Html;
                 SmtpMail.SmtpServer = "relay-hosting.secureserver.net";
                 SmtpMail.Send(message);
-                return Content("Success");
+                return Content("success");
             }
             catch (Exception ex)
             {
                 return Content(ex.Message + ex.InnerException + ex.StackTrace);
             }
+        }
+
+        private string GetMailTemplate()
+        {
+            string mailTemplate = System.IO.File.ReadAllText(Server.MapPath(@"~/MailTemplate.html"));
+
+            return mailTemplate;
         }
     }
     public class FromMail
